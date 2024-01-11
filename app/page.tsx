@@ -17,11 +17,11 @@ export default function Page() {
 
           
      
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
+            <strong>アクメへようこそ.</strong> 学習例です.{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
+              Next.js
             </a>
-            , brought to you by Vercel.
+            , Vercelの提供で .
           </p>
           <Link
             href="/login"
