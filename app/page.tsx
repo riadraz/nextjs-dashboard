@@ -17,7 +17,7 @@ export default function Page() {
 
           
      
-            <strong>アクメへようこそ.</strong> 学習例です.{' '}
+            <strong>日本CRMへようこそ.</strong> 学習例です.{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js
             </a>
