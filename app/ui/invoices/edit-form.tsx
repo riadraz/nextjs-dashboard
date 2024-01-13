@@ -2,7 +2,6 @@
 
 import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
 import { updateInvoice } from '@/app/lib/actions';
-
 import {
   CheckIcon,
   ClockIcon,
