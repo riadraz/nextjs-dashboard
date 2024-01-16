@@ -43,4 +43,6 @@ async function getUser(email: string): Promise<User | undefined> {
         },
       }),
     ],
+    secret: process.env.AUTH_SECRET
+    //secret: process.env.NEXT_PUBLIC_SECRET
   });
