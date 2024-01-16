@@ -7,6 +7,8 @@ import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
  
+// Import statements
+
 export type State = {
   errors?: {
     customerId?: string[];
@@ -32,6 +34,7 @@ const FormSchema = z.object({
 });
  
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
+const UpdateInvoice = FormSchema.omit({ id: true, date: true });
  
 
 
@@ -72,7 +75,7 @@ export async function updateInvoice(
   prevState: State,
   formData: FormData,
 ) {
-  const validatedFields = updateInvoice.safeParse({
+  const validatedFields = UpdateInvoice.safeParse({
     customerId: formData.get('customerId'),
     amount: formData.get('amount'),
     status: formData.get('status'),
